@@ -1,0 +1,36 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "next/babel",
+          {
+            "@babel/preset-env": {
+              "useBuiltIns": "usage",
+              "targets": { "ie": 11, "edge": "16" },
+            },
+          }
+        ]
+      ],
+      "ignore":["node_modules",".next"]
+    },
+    "production": {
+      "presets": [
+        [
+          "next/babel",
+          {
+            "@babel/preset-env": {
+              "useBuiltIns": "usage",
+              "targets": { "ie": 11, "edge": "16" },
+            },
+          }
+        ]
+      ],
+      
+      "ignore":["node_modules",".next"]
+    },
+    "test": {
+      "presets": ["react", "env", "stage-0"]
+    }
+  }
+}
