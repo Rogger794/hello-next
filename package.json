@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "babel-node --presets @babel/preset-env server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "now-build": "next build",
+    "start": "next start -p $PORT"
   },
   "keywords": [],
   "author": "",
